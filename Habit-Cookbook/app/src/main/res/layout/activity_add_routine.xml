@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.example.wahidur.expandablelistdemo.AddRoutine">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Routine Set Up"
+        android:id="@+id/textRoutineView"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:id="@+id/editRoutineText"
+        android:hint="Enter routine name, e.g. &apos;Breakfast&apos;."
+        android:maxLength="20"
+        android:layout_below="@+id/textRoutineView"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add time the routine occurs at."
+        android:id="@+id/textRoutineView2"
+        android:layout_below="@+id/editRoutineText"
+        android:layout_centerHorizontal="true"
+        android:textSize="20sp" />
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:textColor="@android:color/white"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        android:text="Confirm"
+        android:id="@+id/confirmRoutineButton"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="00:00"
+        android:id="@+id/textStartView"
+        android:layout_marginTop="39dp"
+        android:layout_below="@+id/textRoutineView2"
+        android:layout_alignEnd="@+id/textRoutineView" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="01:00"
+        android:id="@+id/textEndView"
+        android:layout_centerVertical="true"
+        android:layout_alignStart="@+id/textStartView" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:textColor="@android:color/white"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        android:text="Change"
+        android:id="@+id/buttonStartTime"
+        android:layout_below="@+id/textStartView"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:textColor="@android:color/white"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        android:text="Change"
+        android:id="@+id/buttonEndTime"
+        android:layout_below="@+id/textEndView"
+        android:layout_alignStart="@+id/buttonStartTime" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Please enter a routine name first before pressing confirm."
+        android:id="@+id/textValidateConfirm"
+        android:layout_above="@+id/confirmRoutineButton"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="10dp"
+        android:gravity="center_horizontal"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Start Time:"
+        android:id="@+id/textView"
+        android:layout_above="@+id/buttonStartTime"
+        android:layout_toStartOf="@+id/textStartView"
+        android:layout_marginRight = "10dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="End Time:"
+        android:id="@+id/textView2"
+        android:layout_centerVertical="true"
+        android:layout_alignEnd="@+id/textView" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Delete Routine"
+        android:id="@+id/buttonDelete"
+        android:background="@color/colorPrimary"
+        android:textColor="@android:color/white"
+        android:layout_below="@+id/textValidateConfirm"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        android:layout_alignParentStart="true"
+        android:visibility="invisible"/>
+
+
+</RelativeLayout>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".HomeScreen">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Daily Routines"
+        android:id="@+id/titleView"
+        android:textStyle="bold"
+        android:layout_margin="12dp"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:text="No routines have been set up yet. Consider adding some via the button below."
+        android:id="@+id/textAlertView"
+        android:textSize="15dp"
+        android:layout_below="@+id/titleView"
+        android:layout_centerHorizontal="true"
+        android:gravity="center_horizontal"/>
+
+    <ExpandableListView
+        android:id="@+id/routine_list"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/textAlertView"
+        android:layout_alignParentStart="true"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:fadeScrollbars="false"
+        android:layout_above="@+id/addRoutineButton">
+    </ExpandableListView>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:textColor="@android:color/white"
+        android:text="Add New Routine"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        android:id="@+id/addRoutineButton"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"/>
+
+</RelativeLayout>
