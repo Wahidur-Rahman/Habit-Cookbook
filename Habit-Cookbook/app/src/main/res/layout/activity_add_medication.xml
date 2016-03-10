@@ -14,7 +14,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="Medication Set Up"
+        android:text="Habit Set Up"
         android:id="@+id/textMedicationView"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true" />
@@ -24,7 +24,7 @@
         android:layout_height="wrap_content"
         android:inputType="textPersonName"
         android:id="@+id/editMedicationText"
-        android:hint="Enter medication name, e.g. &apos;Vit C&apos;."
+        android:hint="Enter a Habit e.g. &apos;Eat Vitamin C&apos;."
         android:maxLength="25"
         android:layout_below="@+id/textMedicationView"
         android:layout_centerHorizontal="true" />
@@ -33,7 +33,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceMedium"
-        android:text="Type the location of your medication. Try to be as descriptive as possible e.g. kitchen cupboard."
+        android:text="Type the location of your habit. Try to be as descriptive as possible e.g. kitchen cupboard."
         android:id="@+id/textLocationView"
         android:layout_above="@+id/medicationText"
         android:layout_alignParentStart="true"

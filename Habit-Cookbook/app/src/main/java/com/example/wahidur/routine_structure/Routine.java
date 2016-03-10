@@ -48,7 +48,7 @@ public class Routine implements Parcelable {
     /**
      * There is an odd quirk where in org.json library writing to a string causes the ArrayList to
      * be surrounded by quotes and hence treated as one single String object when being read again rather than an Array.
-     * can't be cast to normal ArrayList even if they have the same data type.
+     * Can't be cast to normal ArrayList even if they have the same data type.
      * This utillity method was created to help with that.
      */
     private String ArrayListToString(ArrayList<String> list){

@@ -52,15 +52,15 @@ public class ConfirmedNotification extends AppCompatActivity {
             Log.w("NAME Found", name);
             time = intent.getLongExtra("TIME", 0);
             Log.w("TIME FOUND",Long.toString(time));
-            heading.setText("Have you taken your medication for " + name + "?");
+            heading.setText("Have you done your habits for " + name + "?");
         } catch (Exception e){
             //no intents found
         }
         try{
             Map<String, ArrayList<String>> collection = alarmCollection.getHabitCollection();
-            Log.w("GOT HERE",collection.toString());
+
             medValues = collection.get(name);
-            Log.w("GOT HERE", medValues.toString());
+
             if(medValues.size() <= 1){
                 medList.setText(textList);
             }else{

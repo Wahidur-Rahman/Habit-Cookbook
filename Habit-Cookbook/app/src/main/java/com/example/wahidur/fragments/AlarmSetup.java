@@ -98,7 +98,6 @@ public class AlarmSetup {
                 }
                 while(time < Calendar.getInstance().getTimeInMillis() + 5000){
                     time += offset*rate;
-                    Log.w("NEW TIME",Long.toString(time));
                 }
                 extras.putLong("TIME",time);
                 alarmIntent.putExtras(extras);
@@ -121,7 +120,6 @@ public class AlarmSetup {
                 }
                 while(time < Calendar.getInstance().getTimeInMillis() + 5000){
                     time += offset*rate;
-                    Log.w("NEW TIME",Long.toString(time));
                 }
                 extras.putLong("TIME",time);
                 alarmIntent.putExtras(extras);

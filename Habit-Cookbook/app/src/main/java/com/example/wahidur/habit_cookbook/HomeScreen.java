@@ -89,7 +89,7 @@ public class HomeScreen extends Activity {
         TextView routines = (TextView) findViewById(R.id.textAlertView);
 
         if (groupList.size() != 0) {
-            routines.setText("Click on the list items to expand them and see your associated medications");
+            routines.setText("Click on the list items to expand them and see your associated habits");
         } else {
             routines.setText("No routines set up. Consider adding some via the 'Add Routine' button below.");
         }
@@ -119,7 +119,6 @@ public class HomeScreen extends Activity {
                     extras.putString("OPERATION","ADD");
                     extras.putInt("ParentPosition", groupPosition);
                     intent.putExtras(extras);
-                    Log.w("GOT","HERE1");
                     startActivity(intent);
                 }
                 return true;

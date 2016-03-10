@@ -22,7 +22,7 @@
             android:layout_height="wrap_content"
             android:gravity="center_horizontal"
             android:textAppearance="?android:attr/textAppearanceLarge"
-            android:text="Have you taken your medication for Breakfast?"
+            android:text="Have you done your habits?"
             android:id="@+id/textView3" />
     </ScrollView>
 
@@ -72,7 +72,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="If you have taken them all please press yes. If you have intentionally left some out because you are not meant to take them today, please still press yes. Otherwise, press no."
+        android:text="If you have done them all please press yes. If you have intentionally left some out because you are not meant to do them today, please still press yes. Otherwise, press no."
         android:id="@+id/textView6"
         android:gravity="center_horizontal"
         android:layout_below="@+id/textView5"
