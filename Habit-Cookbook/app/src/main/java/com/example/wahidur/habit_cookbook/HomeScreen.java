@@ -82,7 +82,7 @@ public class HomeScreen extends Activity {
         mTracker = application.getDefaultTracker();
         mTracker.setScreenName("Home Screen");
         mTracker.send(new HitBuilders.EventBuilder()
-                .set("JSON STRING: ",jsonString)
+                .set("&JSON STRING: ",jsonString)
                 .build());
 
 
